@@ -10,17 +10,20 @@
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
     <bean id="musicBean"
-          class="GE.spring.ClassicalMusic">
+          class="GE.spring.ClassicalMusic"
+          init-method="doMyInit"
+          destroy-method="doMyDestroy"
+          factory-method="getClassicalMusic">
     </bean>
 
-    <bean id="musicPlayer"
-        class = "GE.spring.MusicPlayer"
-        scope="prototype">
-        <property name="music" ref="musicBean"/>
+<!--    <bean id="musicPlayer"-->
+<!--        class = "GE.spring.MusicPlayer"-->
+<!--        scope="prototype">-->
+<!--        <property name="music" ref="musicBean"/>-->
 
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="volume" value="${musicPlayer.volume}"/>
-    </bean>
+<!--        <property name="name" value="${musicPlayer.name}"/>-->
+<!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+<!--    </bean>-->
 
 
 </beans>
