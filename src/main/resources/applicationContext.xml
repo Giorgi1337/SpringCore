@@ -11,4 +11,10 @@
           class="GE.spring.RapMusic">
     </bean>
 
+    <bean id="musicPlayer"
+        class = "GE.spring.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+    </bean>
+
+
 </beans>
