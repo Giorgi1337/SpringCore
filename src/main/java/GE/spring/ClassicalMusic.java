@@ -2,7 +2,7 @@ package GE.spring;
 
 import org.springframework.stereotype.Component;
 
-@Component("classicalMusic")
+@Component
 public class ClassicalMusic implements Music {
     @Override
     public String getSong() {
