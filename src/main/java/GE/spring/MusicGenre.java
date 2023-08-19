@@ -1,2 +1,5 @@
-package GE.spring;public class MusicGenre {
+package GE.spring;
+
+public enum MusicGenre {
+    CLASSICAL, ROCK
 }
