@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-//@Scope("prototype")
+@Scope("prototype")
 public class ClassicalMusic implements Music {
     private List<String> songs = new ArrayList<>();
 
